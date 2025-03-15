@@ -364,7 +364,7 @@ li a:hover {
   margin-top: 100px;
 }
 
-.learning-left{
+.learning-left {
   margin-top: 30px;
 }
 
@@ -401,12 +401,74 @@ li a:hover {
   width: 181px;
   height: 56px;
   color: white;
-  background-color: #54B8FF;
+  background-color: #54b8ff;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
 }
 
-.learning-left a:hover{
- background-color: hsl(206, 76%, 57%);
+.learning-left a:hover {
+  background-color: hsl(206, 76%, 57%);
+}
+
+/* Footer */
+
+.footer-area {
+  margin-top: 30px;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -1%;
+  color: #1c1c1d;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #7a7a7e;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: space-around;
 }
