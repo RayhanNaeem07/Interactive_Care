@@ -68,6 +68,7 @@ li a:hover {
 
 .hero {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hero > * {
@@ -128,12 +129,28 @@ li a:hover {
 
 .teacher {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .teacher > * {
   flex: 1;
 }
 
+.teacher-left {
+  position: relative;
+}
+
+.teacher-sm-cart {
+  position: absolute;
+  top: -120px;
+}
+
+.teacher-stat {
+  position: absolute;
+  top: -200px;
+  left: 170px;
+  z-index: 1;
+}
 
 .teacher-title {
   width: 529px;
@@ -168,52 +185,93 @@ li a:hover {
 }
 
 .cart {
- 
   width: 344px;
   border-radius: 15px;
-  box-shadow:  6px 6px 4px #00000040;
+  box-shadow: 6px 6px 4px #00000040;
   padding: 10px 20px 30px 20px;
 }
 
-.cart-desc h6{
+.cart-desc h6 {
   font-weight: 500;
   font-size: 0.8rem;
-  color: #FF733B;
+  color: #ff733b;
 }
 
-.cart-p{
+.cart-p {
   font-weight: 600;
   font-size: 1.2rem;
-  color:#04004D ;
+  color: #04004d;
   margin-top: 5px;
 }
 
-.cart-desc-p{
+.cart-desc-p {
   font-weight: 400;
   font-size: 0.9rem;
-  color: #898E92;
+  color: #898e92;
   margin-top: 5px;
 }
 
-.cart-time{
+.cart-time {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.cart-time p{
+.cart-time p {
   font-weight: 500;
   font-size: 0.9rem;
-  color: #898E92;
+  color: #898e92;
 }
 
-.cart-btn{
+.cart-btn {
   width: 90px;
   height: 24px;
   border-radius: 5px;
-  background-color:#367166 ;
+  background-color: #367166;
   border: none;
   color: white;
   font-size: 0.8rem;
   text-align: center;
+}
+
+/* Feature */
+
+.features-area {
+  margin-top: 40px;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  
+
+}
+
+.features-div {
+  width: 290px;
+  height: 278px;
+  margin-top: 30px;
+}
+
+.features-div-desc h3 {
+  width: 298px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #1e1e1e;
+  margin-top: 20px;
+}
+
+.features-div-desc p {
+  width: 290px;
+  height: 112px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #757575;
+  margin-top: 20px;
 }
