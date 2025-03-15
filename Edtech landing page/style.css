@@ -116,10 +116,104 @@ li a:hover {
   padding: 12px;
 }
 
-.arrow-icon{
-    margin-left: 5px;
+.arrow-icon {
+  margin-left: 5px;
 }
 
 .hero-img img {
   width: 100%;
+}
+
+/* Teacher section */
+
+.teacher {
+  display: flex;
+}
+
+.teacher > * {
+  flex: 1;
+}
+
+
+.teacher-title {
+  width: 529px;
+  height: 124px;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 62px;
+  color: #04004d;
+}
+
+.teacher-p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #336c61;
+}
+
+.teacher-right a {
+  text-decoration: none;
+  color: #336c61;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.teacher-right a:hover {
+  color: #1a1b1b;
+}
+
+.cart {
+ 
+  width: 344px;
+  border-radius: 15px;
+  box-shadow:  6px 6px 4px #00000040;
+  padding: 10px 20px 30px 20px;
+}
+
+.cart-desc h6{
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #FF733B;
+}
+
+.cart-p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color:#04004D ;
+  margin-top: 5px;
+}
+
+.cart-desc-p{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #898E92;
+  margin-top: 5px;
+}
+
+.cart-time{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-time p{
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #898E92;
+}
+
+.cart-btn{
+  width: 90px;
+  height: 24px;
+  border-radius: 5px;
+  background-color:#367166 ;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
 }
