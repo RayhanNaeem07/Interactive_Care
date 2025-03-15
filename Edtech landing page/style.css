@@ -346,11 +346,67 @@ li a:hover {
   line-height: 14px;
   letter-spacing: 1%;
   text-align: center;
-  color: #4D4D52;
+  color: #4d4d52;
 }
 
 .duration-icon {
   position: relative;
   right: 4px;
   top: 4px;
+}
+
+/* Learning section */
+
+.learning {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.learning-left{
+  margin-top: 30px;
+}
+
+.learning-left h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #2f2b71;
+}
+
+.learning-left h1 {
+  width: 478px;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 72px;
+  color: #101130;
+  margin-top: 10px;
+}
+
+.learning-left p {
+  width: 374px;
+  height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #67687b;
+  margin-top: 20px;
+}
+
+.learning-left a {
+  display: inline-block;
+  text-decoration: none;
+  width: 181px;
+  height: 56px;
+  color: white;
+  background-color: #54B8FF;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.learning-left a:hover{
+ background-color: hsl(206, 76%, 57%);
 }
