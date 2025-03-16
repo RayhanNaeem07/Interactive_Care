@@ -411,6 +411,85 @@ li a:hover {
   background-color: hsl(206, 76%, 57%);
 }
 
+/* Newsletter */
+
+.newsletter-area {
+  background-color: rgb(173, 229, 229);
+  width: 1200px;
+  height: 391px;
+  margin: 100px auto;
+}
+.newsletter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.newsletter-left {
+  padding: 20px;
+}
+
+.newsletter-left h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #8785aa;
+  margin-top: 40px;
+}
+
+.newsletter-left p {
+  width: 287px;
+  height: 104px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  vertical-align: middle;
+  color: #1b1b1b;
+  margin-top: 10px;
+}
+
+.email-container{
+  position: relative;
+  display: inline-block;
+}
+
+.email-container input {
+  width: 330px;
+  height: 75px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 40px;
+ 
+}
+
+
+
+.newsletter input::placeholder{
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #8D8A7A;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.email-btn{
+  position: absolute;
+  right: 15px;
+  top: 65%;
+  transform: translateY(-50%);
+  background:#12294B;
+  border: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* Footer */
 
 .footer-area {
