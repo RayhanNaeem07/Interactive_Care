@@ -1,0 +1,9 @@
+.multi-bg {
+    width: 500px;
+    height: 400px;
+    background-image: url('./messi.jpg'), 
+                      url('./cr7.jpg');
+    background-position: top left, center;
+    background-size: 150px 150px, cover;
+    background-repeat: no-repeat, no-repeat;
+}

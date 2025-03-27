@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark background as in the image */
+    font-family: Arial, sans-serif;
+}
+
+/* Top Horizontal Navbar */
+.top-nav {
+    background-color: #ff4500; /* Orange color */
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top-nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown for WordPress */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ff4500; /* Orange color */
+    width: 200px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin: 0;
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    font-weight: normal;
+}
+
+/* Nested Dropdown for Tutorials */
+.nested-dropdown {
+    position: relative;
+}
+
+.nested-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #000; /* Black color for Tutorials */
+    width: 200px;
+}
+
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+}
+
+/* Sidebar styling to match the image layout */
+.sidebar {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.sidebar-section {
+    background-color: #ff4500;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar-section.black {
+    background-color: #000;
+}
+
+.sidebar-section ul {
+    list-style: none;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar-section ul li a:hover {
+    text-decoration: underline;
+}
