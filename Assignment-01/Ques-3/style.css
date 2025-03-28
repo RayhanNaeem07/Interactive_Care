@@ -1,120 +1,73 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-body {
-    background-color: #1a1a1a; /* Dark background as in the image */
-    font-family: Arial, sans-serif;
-}
+  body{
+    background-color: #1a1a1a
+  }
 
-/* Top Horizontal Navbar */
-.top-nav {
-    background-color: #ff4500; /* Orange color */
+  .header-area{
+    background-color:#ff4500 ;
     width: 100%;
-    padding: 10px 20px;
-}
-
-.top-nav ul {
-    list-style: none;
+    height: 80px;
+    padding: 0.7rem 0;
+  }
+  li {
+    list-style-type: none;
+   
+  }
+  
+  .nav-container {
     display: flex;
-    justify-content: flex-start;
-}
-
-.top-nav ul li {
-    margin-right: 20px;
+  }
+  
+  .sub-menu li {
     position: relative;
-}
-
-.top-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.top-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Dropdown for WordPress */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
+  }
+  
+  .sub-menu {
+    flex-direction: column;
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ff4500; /* Orange color */
-    width: 200px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content li {
-    margin: 0;
-    padding: 10px;
-}
-
-.dropdown-content li a {
-    font-weight: normal;
-}
-
-/* Nested Dropdown for Tutorials */
-.nested-dropdown {
-    position: relative;
-}
-
-.nested-dropdown-content {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #000; /* Black color for Tutorials */
-    width: 200px;
-}
-
-.nested-dropdown:hover .nested-dropdown-content {
-    display: block;
-}
-
-/* Sidebar styling to match the image layout */
-.sidebar {
     margin-top: 10px;
-    width: 200px;
-}
-
-.sidebar-section {
+  }
+  
+  ul li:hover .sub-menu {
+    display: block;
+  }
+  
+  /* Nested sub menu */
+  
+  
+  
+  .nested-sub-menu li {
+    top: -55px;
+    left: 150px;
+  }
+  
+  .nested-sub-menu {
+    flex-direction: column;
+    display: none;
+  
+  }
+  
+  .sub-menu li:hover .nested-sub-menu {
+    display: block;
+  }
+  
+  ul li a {
+    display: inline-block;
+    width: 150px;
     background-color: #ff4500;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-.sidebar-section.black {
-    background-color: #000;
-}
-
-.sidebar-section ul {
-    list-style: none;
-}
-
-.sidebar-section ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar-section ul li a {
-    color: white;
+    padding: 20px 0;
+    text-align: center;
+   
     text-decoration: none;
-    font-size: 16px;
-}
+    color: white;
+  }
 
-.sidebar-section ul li a:hover {
-    text-decoration: underline;
-}
+  .sub-menu li a:hover{
+    background-color:black;
+  }
+  
