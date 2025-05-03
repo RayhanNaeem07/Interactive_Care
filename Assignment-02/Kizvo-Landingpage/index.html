@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Internal css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- External css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./images/Link - home.svg"
+      type="image/x-icon"
+    />
+
+    <title>Kizvo | Landing page</title>
+  </head>
+  <body class=" bg-body-tertiary">
+    <!-- Navbar start -->
+    <nav class="container navbar navbar-expand-lg bg-white p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./images/Link - home.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">BUSINESS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HEALTH NEWS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">WORLD NEWS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">SPORTS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">CULTURE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">SUBSCRIBE</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">CART(0)</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <!-- Search Box with Icon -->
+            <div class="position-relative me-4">
+              <input
+                class="form-control rounded-pill ps-3"
+                type="search"
+                placeholder="Search Here"
+                aria-label="Search"
+              />
+              <i
+                class="bi bi-search position-absolute top-50 end-0 translate-middle-y pe-3"
+              ></i>
+            </div>
+
+            <button class="btn p-0 border-0" aria-label="Menu">
+              <img src="./images/Background.svg" alt="Menu" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero section start -->
+    <div class="container my-4">
+      <div class="row">
+        <!-- Main Article -->
+        <div class="col-lg-8 col-md-12 mb-4">
+          <img
+            src="./images/hero-img.png"
+            alt="Manufacturing plant"
+            class="article-img mb-3"
+          />
+          <h1 class="display-6 fw-semibold text-black">
+            Revolutionizing manufacturing emerging trends shaping the industry
+          </h1>
+          <span class="category-badge bg-primary text-white">WORLD NEWS</span>
+          <span class="text-black ms-2">— JAN 25, 2025</span>
+        </div>
+        <!-- Sidebar Articles -->
+        <div class="col-lg-4 col-md-12">
+          <div class="sidebar-article">
+            <span class="category-badge bg-warning text-dark">BUSINESS</span>
+            <span class="text-black ms-2">— FEB 10, 2025</span>
+            <h5 class="mt-2">
+              Adapting business strategies to meet changing demands
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <span class="category-badge bg-danger text-white">TECH</span>
+            <span class="text-black ms-2">— FEB 10, 2025</span>
+            <h5 class="mt-2">
+              Smart homes revolution how iot is transforming living spaces
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <span class="category-badge bg-info text-white">CULTURE</span>
+            <span class="text-black ms-2">— JAN 27, 2025</span>
+            <h5 class="mt-2">
+              The power of art in connecting and expressing cultural
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <span class="category-badge bg-success text-white"
+              >HEALTH NEWS</span
+            >
+            <span class="text-black ms-2">— JAN 27, 2025</span>
+            <h5 class="mt-2">
+              How artificial intelligence & machine learning are changing the
+              field
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <span class="category-badge bg-danger text-white">SPORTS</span>
+            <span class="text-black ms-2">— JAN 27, 2025</span>
+            <h5 class="mt-2">
+              The influence of youth sports programs on developing future
+              champions
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section end -->
+
+    <!-- Hero cart -->
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card news-card">
+            <img src="./images/h-cart-1.png" class="card-img" alt="Business" />
+            <div class="news-overlay">
+              <h5 class="mb-0 text-white fw-light">BUSINESS</h5>
+              <i class="bi bi-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card news-card">
+            <img
+              src="./images/h-cart-2.png"
+              class="card-img"
+              alt="Health News"
+            />
+            <div class="news-overlay">
+              <h5 class="mb-0 text-white fw-light">HEALTH NEWS</h5>
+              <i class="bi bi-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card news-card">
+            <img
+              src="./images/h-cart-3.png"
+              class="card-img"
+              alt="World News"
+            />
+            <div class="news-overlay">
+              <h5 class="mb-0 text-white fw-light">WORLD NEWS</h5>
+              <i class="bi bi-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card news-card">
+            <img src="./images/h-cart-4.png" class="card-img" alt="Sports" />
+            <div class="news-overlay">
+              <h5 class="mb-0 text-white fw-light">SPORTS</h5>
+              <i class="bi bi-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card news-card">
+            <img src="./images/h-cart-5.png" class="card-img" alt="Culture" />
+            <div class="news-overlay">
+              <h5 class="mb-0 text-white fw-light">CULTURE</h5>
+              <i class="bi bi-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero cart -->
+
+    <!-- Stories start -->
+    <div class="container my-4 px-3 px-md-5 py-5">
+      <div class="row flex-column flex-lg-row">
+        <!-- Sidebar Articles -->
+        <div
+          class="bg-white col-lg-4 col-md-12 mb-4 mb-lg-0 stories-sidebar p-4 p-md-5"
+        >
+          <div class="sidebar-article">
+            <h6 class="text-uppercase">Stories That Matter</h6>
+            <h3 class="mt-2 mb-4">EDITOR'S PICK</h3>
+          </div>
+          <div class="sidebar-article">
+            <h6 class="text-uppercase">CULTURE</h6>
+            <h5 class="mt-2">
+              The power of art in connecting and expressing cultural
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <h6 class="text-uppercase">HEALTH NEWS</h6>
+            <h5 class="mt-2">
+              How artificial intelligence & machine learning are changing the
+              field
+            </h5>
+          </div>
+          <div class="sidebar-article">
+            <h6 class="text-uppercase">SPORTS</h6>
+            <h5 class="mt-2">
+              The influence of youth sports programs on developing future
+              champions
+            </h5>
+          </div>
+        </div>
+        <!-- Main Image -->
+        <div class="col-lg-8 col-md-12">
+          <img
+            src="./images/stories.png"
+            alt="Manufacturing plant"
+            class="article-img mb-3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Stories end -->
+
+    <!-- Latest news start -->
+    <div class="latest-news  p-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">LATEST NEWS</h2>
+        <a href="#" class="view-all text-dark text-decoration-none"
+          >VIEW ALL &rarr;</a
+        >
+      </div>
+
+      <div class="row g-4">
+        <!-- Left 2 large cards -->
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="news-card">
+                <img src="./images/ln-1.png" alt="VR" />
+                <p class="news-tag mt-2">
+                  TECHNOLOGY <span class="news-date">— Jan 25, 2025</span>
+                </p>
+                <p class="news-title">
+                  Future-focused an in-depth look at cutting-edge tech trends
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="news-card">
+                <img
+                  src="./images/ln-2.png"
+                  alt="Rocket"
+                />
+                <p class="news-tag mt-2">
+                  BUSINESS <span class="news-date">— Jan 25, 2025</span>
+                </p>
+                <p class="news-title">
+                  Understanding the interconnectedness of events shaping our
+                  world today
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3 small stacked cards -->
+        <div class="col-lg-4">
+          <div class="right-news mb-3 d-flex">
+            <img
+              src="./images/ln-3.png"
+              alt="Business"
+              class="me-3"
+            />
+            <div>
+              <p class="news-tag mb-1">
+                BUSINESS <span class="news-date">— Feb 10, 2025</span>
+              </p>
+              <p class="news-title">
+                Adapting business strategies to meet changing demands
+              </p>
+            </div>
+          </div>
+          <div class="right-news mb-3 d-flex">
+            <img
+              src="./images/ln-4.png"
+              alt="IoT"
+              class="me-3"
+            />
+            <div>
+              <p class="news-tag mb-1">
+                TECHNOLOGY <span class="news-date">— Feb 10, 2025</span>
+              </p>
+              <p class="news-title">
+                Smart homes revolution how iot is transforming living spaces
+              </p>
+            </div>
+          </div>
+          <div class="right-news d-flex">
+            <img
+              src="./images/ln-5.png"
+              alt="Culture"
+              class="me-3"
+            />
+            <div>
+              <p class="news-tag mb-1">
+                CULTURE <span class="news-date">— Jan 27, 2025</span>
+              </p>
+              <p class="news-title">
+                The power of art in connecting and expressing cultural
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest news end -->
+
+    <!-- Technology start -->
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold">TECHNOLOGY</h2>
+          <a href="#" class="text-black  small">VIEW ALL →</a>
+        </div>
+      
+        <div class="row">
+          <!-- Left Articles -->
+          <div class="col-lg-8">
+            <div class="row g-4">
+              <!-- Article 1 -->
+              <div class="col-md-6">
+                <a href="#">
+                  <img src="./images/technology-1.png" class="img-fluid rounded mb-2" alt="IoT">
+                  <p class="news-meta">Technology — Feb 10, 2025</p>
+                  <p class="news-title">Smart homes revolution how iot is transforming living spaces</p>
+                </a>
+              </div>
+              <!-- Article 2 -->
+              <div class="col-md-6">
+                <a href="#">
+                  <img src="./images/technology-2.png" class="img-fluid rounded mb-2" alt="5G">
+                  <p class="news-meta">Technology — Jan 25, 2025</p>
+                  <p class="news-title">The future of 5G connecting a world at lightning speed</p>
+                </a>
+              </div>
+              <!-- Article 3 -->
+              <div class="col-md-6">
+                <a href="#">
+                  <img src="./images/technology-3.png" class="img-fluid rounded mb-2" alt="Cybersecurity">
+                  <p class="news-meta">Technology — Jan 25, 2025</p>
+                  <p class="news-title">Cybersecurity at risk the growing threat of digital breaches</p>
+                </a>
+              </div>
+              <!-- Article 4 -->
+              <div class="col-md-6">
+                <a href="#">
+                  <img src="./images/technology-4.png" class="img-fluid rounded mb-2" alt="VR">
+                  <p class="news-meta">Technology — Jan 25, 2025</p>
+                  <p class="news-title">Transforming entertainment, education & beyond</p>
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Featured Article -->
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="featured-article">
+              <img src="./images/technology-5.png" alt="Featured VR">
+              <div class="featured-content">
+                <span class="author-badge">Kristin Watson</span>
+                <p class="news-meta">Jan 25, 2025</p>
+                <h5 class="fw-bold">Future-focused an in-depth look at cutting-edge tech trends</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Technology end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
