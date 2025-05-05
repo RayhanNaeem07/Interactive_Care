@@ -115,14 +115,68 @@
 }
 
 /* Blockchain */
-.blockchain{
-  height: 100vh ;
-  background-color: #cf412b ;
+.blockchain {
+  height: 100vh;
+  background-color: #cf412b;
 }
 
-.blockchain-card{
- margin-top: 14rem ;
+.blockchain-card {
+  margin-top: 14rem;
 }
+
+@media (max-width: 768px) {
+  .blockchain-card {
+    margin: 0;
+  }
+  .blockchain {
+    height: 100%;
+  }
+}
+
+/* Editor's pick */
+
+.editor-pick-img {
+  width: 100%;
+  object-fit: cover;
+}
+.main-img {
+  height: 400px;
+}
+.category-badge {
+  padding: 0.3rem 0rem;
+  border-radius: 0.2rem;
+}
+
+/* Technology */
+.tech-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 1rem;
+}
+.view-all {
+  text-decoration: none;
+  color: #dc3545;
+
+}
+.view-all:hover {
+  color: #bb2d3b;
+}
+
+/* Stuff */
+.stuff-img{
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+}
+
+.stuff-img:hover{
+  transform: scale(1.03);
+}
+
 /* Footer */
 
 .footer {
