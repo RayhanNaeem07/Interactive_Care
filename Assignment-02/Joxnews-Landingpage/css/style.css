@@ -1,68 +1,165 @@
-*{
-    font-family: 'Switzer', sans-serif;
+* {
+  font-family: "Switzer", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Header */
 
 .search-box {
-    max-width: 300px;
-    border-radius: 5px;
-    border: 1px solid #000;
-  }
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-  .nav-link {
-    color: #000;
-    font-weight: 500;
-  }
-  .subscribe-btn {
-    background-color: #111;
-    color: #fff;
-    border-radius: 10px;
-    padding: 6px 16px;
-  }
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
 
-  /* Footer */
+.nav-link {
+  color: #000 !important;
+}
+.subscribe-btn {
+  background-color: #111;
+  border: 1px solid black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
 
-  .footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 3rem 1rem;
-  }
-  .footer a {
-    color: #ccc;
-    text-decoration: none;
-  }
-  .footer a:hover {
-    color: #fff;
-  }
+.subscribe-btn:hover {
+  background-color: white;
+  color: #000;
+  border: 1px solid black;
+}
 
-  .footer-main{
-    padding: 4rem 0;
-  }
-  .social-icon {
-    width: 45px;
-    height: 45px;
-    border: 1px solid #666;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-   
-  }
-  .thumbnail {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  .footer-bottom {
-    border-top: 1px solid #444;
+/* Hero */
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+.side-news img {
+  width: 190px;
+  height: 156px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.side-news-title {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.side-meta {
+  font-size: 1rem;
+  color: gray;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-meta {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .side-news {
     margin-top: 2rem;
-    padding-top: 1rem;
-    font-size: 0.9rem;
   }
+}
+
+/* Latest news */
+
+.news-meta {
+  font-size: 0.875rem;
+  color: gray;
+  margin-bottom: 0.25rem;
+}
+.news-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.news-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+.news-card {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.section-header h4 {
+  margin: 0;
+  font-weight: 600;
+}
+.view-all {
+  color: #b22;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.view-all:hover {
+  text-decoration: underline;
+}
+
+/* Blockchain */
+.blockchain{
+  height: 100vh ;
+  background-color: #cf412b ;
+}
+
+.blockchain-card{
+ margin-top: 14rem ;
+}
+/* Footer */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-main {
+  padding: 4rem 0;
+}
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
