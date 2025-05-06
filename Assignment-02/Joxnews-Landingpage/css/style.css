@@ -187,6 +187,17 @@
 .articles-img:hover{
   transform: scale(1.03);
 }
+
+/* Stay informed */
+.stay-informed{
+  background-color:#cf412b ;
+  margin: 5rem 0;
+}
+
+.stay-info-btn{
+  background-color: #1f1f1f;
+ 
+}
 /* Footer */
 
 .footer {
