@@ -177,6 +177,16 @@
   transform: scale(1.03);
 }
 
+/* Articles & Resources */
+.articles-img{
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.articles-img:hover{
+  transform: scale(1.03);
+}
 /* Footer */
 
 .footer {
