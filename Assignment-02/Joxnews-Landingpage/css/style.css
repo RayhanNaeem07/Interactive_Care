@@ -198,6 +198,24 @@
   background-color: #1f1f1f;
  
 }
+
+/* Podcast */
+.podcast-img{
+  width: 412px;
+  height: 480px;
+  object-fit: cover;
+  padding-right: 1.5rem;
+}
+
+.podcast-cart-inner{
+  position: absolute;
+  bottom: 100px;
+  padding: 1rem 1rem;
+  margin: 0 2rem;
+  z-index: 1;
+}
+
+
 /* Footer */
 
 .footer {
