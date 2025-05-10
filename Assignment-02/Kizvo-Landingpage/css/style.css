@@ -132,7 +132,7 @@ nav {
 }
 .featured-content {
   position: absolute;
-  bottom: 0;
+  top: 40px;
   padding: 1.5rem;
   width: 100%;
 }
