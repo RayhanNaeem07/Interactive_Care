@@ -8,19 +8,239 @@
   </head>
   <body>
     <!-- Header start -->
-    <header>
+    <header class="">
       <nav class="section-container flex justify-between items-center">
         <div><img src="./images/logo.png" alt="" /></div>
         <div>
           <ul class="flex space-x-4">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Past Work</li>
-            <li>Reviews</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Past Work</a></li>
+            <li><a href="">Past Work</a></li>
           </ul>
         </div>
         <div><button>Get Free Quote</button></div>
       </nav>
     </header>
+
+    <!-- Hero section -->
+    <section class="relative">
+      <div
+        class="w-full h-[90vh] bg-center bg-repeat bg-[#143624]"
+        style="background-image: url('./images/bg-puzzle.png')"
+      ></div>
+    </section>
+
+    <!-- Reviews section -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-semibold text-center mb-8">
+          Trusted by Families Like Yours
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+          <!-- Review 1 -->
+          <div
+            class="bg-white text-center p-6 rounded-4xl shadow-lg w-full max-w-xs"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="./images/cart-img-1.jpg"
+                alt="Mason Carter"
+                class="object-cover w-14 h-14 rounded-full"
+              />
+            </div>
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">MASON CARTER</h3>
+              <div class="flex justify-center">
+                <span class="text-yellow-400">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Super professional service, quick installation, and everything
+              works perfectly. Highly recommend!"
+            </p>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google Logo"
+                class="w-5 h-5 mb-1"
+              />
+              <span class="text-gray-500 text-sm">REVIEWED ON GOOGLE</span>
+            </div>
+          </div>
+
+          <!-- Review 2 (Highlighted) -->
+          <div
+            class="bg-[#0B5D1E] text-white text-center p-6 rounded-4xl shadow-lg w-full max-w-xs transform scale-105"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="./images/cart-img-3.jpg"
+                alt="Chloe Anderson"
+                class="object-cover w-14 h-14 rounded-full"
+              />
+            </div>
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">CHLOE ANDERSON</h3>
+              <div class="flex justify-center">
+                <span class="text-yellow-400">★★★★★</span>
+              </div>
+            </div>
+            <p class="mb-4">
+              "Very happy with their work! The team was efficient and the new
+              system runs great."
+            </p>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google Logo"
+                class="w-5 h-5 mb-1"
+              />
+              <span class="text-gray-300 text-sm">REVIEWED ON GOOGLE</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div
+            class="bg-white text-center p-6 rounded-4xl shadow-lg w-full max-w-xs"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="./images/cart-img-2.jpg"
+                alt="Skylar Bennett"
+                class="object-cover w-14 h-14 rounded-full"
+              />
+            </div>
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">SKYLAR BENNETT</h3>
+              <div class="flex justify-center">
+                <span class="text-yellow-400">★★★★★</span>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Great experience from start to finish. Honest pricing and
+              top-notch service!"
+            </p>
+            <div class="flex flex-col items-center">
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google Logo"
+                class="w-5 h-5 mb-1"
+              />
+              <span class="text-gray-500 text-sm">REVIEWED ON GOOGLE</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <button
+            class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition"
+          >
+            VIEW MORE
+          </button>
+        </div>
+      </div>
+
+      <!-- Trusted  -->
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-semibold text-center mb-12">
+          Your Trusted HVAC Experts
+        </h2>
+        <div class="flex justify-center gap-8 mb-12">
+          <div class="text-center">
+            <img
+              src="./images/certi2.png"
+              alt="ISO 9001 Certified"
+              class="mx-auto mb-4 w-24 h-24"
+            />
+            <p class="text-gray-600">Quality Management for HVAC Excellence</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="./images/certi2.png"
+              alt="ISO 14001 Certification"
+              class="mx-auto mb-4 w-24 h-24"
+            />
+            <p class="text-gray-600">Eco-Friendly HVAC Solutions</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <img
+              src="./images/empresa-certificada 1.png"
+              alt="EPA Certified"
+              class="mx-auto mb-4 w-24 h-24"
+            />
+            <p class="text-gray-600">EPA Certified</p>
+          </div>
+          <div>
+            <img
+              src="./images/mega.png"
+              alt="BBB Accredited"
+              class="mx-auto mb-4 w-24 h-24"
+            />
+            <p class="text-gray-600">BBB Accredited</p>
+          </div>
+          <div>
+            <img
+              src="./images/nate.png"
+              alt="NATE Certified"
+              class="mx-auto mb-4 w-24 h-24"
+            />
+            <p class="text-gray-600">NATE Certified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choosing us -->
+
+  <section class="bg-[#EBFFF1]">
+  <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-semibold text-center mb-12">
+        The Benefits of Choosing Us
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <img
+            src="./images/clock-03.png"
+            alt="24/7 Emergency Services"
+            class="mx-auto mb-4 w-12 h-12"
+          />
+          <h3 class="text-lg font-medium mb-2">24/7 Emergency Services</h3>
+          <p class="text-gray-600">
+            Fast and reliable emergency HVAC services available 24/7.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <img
+            src="./images/labor.png"
+            alt="Experienced Professionals"
+            class="mx-auto mb-4 w-12 h-12"
+          />
+          <h3 class="text-lg font-medium mb-2">Experienced Professionals</h3>
+          <p class="text-gray-600">
+            Highly trained and certified HVAC experts with years of industry
+            experience.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-blue-200"
+        >
+          <img
+            src="./images/dollar-circle.png"
+            alt="Affordable Pricing"
+            class="mx-auto mb-4 w-12 h-12"
+          />
+          <h3 class="text-lg font-medium mb-2">Affordable Pricing</h3>
+          <p class="text-gray-600">
+            Transparent and competitive pricing with no hidden fees.
+          </p>
+          <p class="text-blue-500 mt-2">273 x 59</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </body>
 </html>

@@ -3,3 +3,8 @@
 .section-container{
     @apply container py-4 px-10
 }
+
+@theme{
+    --color-primary:#1A1A1A;
+}
+
