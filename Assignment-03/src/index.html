@@ -6,29 +6,121 @@
       <link rel="stylesheet" href="./output.css" />
       <title>Document</title>
    </head>
-   <body>
-      <!-- Header start -->
-      <header class="">
-         <nav class="section-container flex justify-between items-center">
-            <div><img src="./images/logo.png" alt="" /></div>
-            <div>
-               <ul class="flex space-x-4">
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Past Work</a></li>
-                  <li><a href="">Past Work</a></li>
-               </ul>
+   <body >
+      <div class="w-full min-h-[100vh] bg-center bg-repeat bg-[#143624]/95" style="background-image: url('./images/bg-puzzle.png')">
+         <!-- Header start -->
+         <header class="bg-transparent mx-4 sm:mx-20  py-4">
+            <nav class="section-container rounded-full mx-auto px-4 bg-white flex justify-between items-center">
+               <!-- Logo -->
+               <div>
+                  <img src="./images/logo.png" alt="CoolQuest Logo" class="h-8" />
+               </div>
+               <!-- Hamburger Menu Icon  -->
+               <div class="md:hidden">
+                  <button id="hamburger-btn" class="text-black focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                     </svg>
+                  </button>
+               </div>
+               <!-- Navigation Links -->
+               <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
+                  <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black font-medium p-4 md:p-0 bg-white md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto">
+                     <li><a href="#" class="hover:text-[#0B5D1E]">About Us</a></li>
+                     <li><a href="#" class="hover:text-[#0B5D1E]">Services</a></li>
+                     <li><a href="#" class="hover:text-[#0B5D1E]">Past Work</a></li>
+                     <li><a href="#" class="hover:text-[#0B5D1E]">Reviews</a></li>
+                  </ul>
+               </div>
+               <!-- Get Free Quote Button -->
+               <div class="hidden md:block">
+                  <button class="bg-[#0B5D1E] text-white px-4 py-3 rounded-full hover:bg-[#084515] transition">
+                  Get Free Quote
+                  </button>
+               </div>
+            </nav>
+         </header>
+         <!-- Hero section -->
+         <section class="relative text-white">
+            <div class="container mx-auto px-4 min-h-[80vh] flex flex-col md:flex-row items-center justify-between">
+               <!-- Left Side: Text and Form -->
+               <div class="max-w-lg mb-8 md:mb-0">
+                  <h1 class="text-4xl md:text-5xl font-bold mb-6">Reliable HVAC for Every Season</h1>
+                  <ul class="space-y-4 mb-6">
+                     <li class="flex items-center space-x-2">
+                        <img src="./images/checkmark-badge-01.png" alt="Checkmark" class="w-5 h-5" />
+                        <p class="text-sm">Certified & Experienced Technicians</p>
+                     </li>
+                     <li class="flex items-center space-x-2">
+                        <img src="./images/alarm-clock.png" alt="Clock" class="w-5 h-5" />
+                        <p class="text-sm">Fast, Reliable Service</p>
+                     </li>
+                     <li class="flex items-center space-x-2">
+                        <img src="./images/hot-price.png" alt="Price" class="w-5 h-5" />
+                        <p class="text-sm">Transparent, Affordable Pricing</p>
+                     </li>
+                  </ul>
+                  <form class="bg-white p-6 rounded-lg backdrop-blur-sm max-w-md text-black">
+                     <div class="grid grid-cols-2 gap-4">
+                        <input 
+                           type="text" 
+                           placeholder="Name" 
+                           class="p-3 rounded bg-white/20 border border-green-500 text-black placeholder:text-black/90 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                           />
+                        <input 
+                           type="tel" 
+                           placeholder="Phone" 
+                           class="p-3 rounded bg-white/20 border border-green-500 text-black placeholder:text-black/90 text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                           />
+                        <select 
+                           class="p-3 rounded bg-white/20 border border-green-500 text-black text-sm focus:outline-none focus:ring-2 focus:ring-green-600"
+                           >
+                           <option value="" disabled selected class="text-gray-400">Service</option>
+                           <option value="installation" class="text-black">Installation</option>
+                           <option value="repair" class="text-black">Repair</option>
+                           <option value="maintenance" class="text-black">Maintenance</option>
+                        </select>
+                        <button 
+                           type="submit" 
+                           class="bg-[#0B5D1E] hover:bg-[#084515] text-white font-bold py-3 px-4 rounded transition text-sm"
+                           >
+                        Submit
+                        </button>
+                     </div>
+                  </form>
+                  <div class="mt-6 w-full">
+                     <p class="text-md font-semibold mb-2 md:mb-0">Certified Installer</p>
+                     <div class="flex py-4 space-x-8">
+                        <img src="./images/layer102.png" alt="GAF Logo" class="h-6" />
+                        <img src="./images/Group 1.png" alt="Lennox Logo" class="h-6" />
+                        <img src="./images/Group 2.png" alt="American Standard Logo" class="h-6" />
+                     </div>
+                  </div>
+               </div>
+               <!-- Right Side: Image and Badges -->
+               <div class="relative w-full md:w-auto">
+                  <div>
+                     <img src="./images/hero model.png" alt="Technician" class="h-[60vh] object-contain" />
+                     <img src="./images/warranty.png" alt="Warranty Badge" class="absolute top-15 -left-5" />
+                  </div>
+                  <div class="mt-4 grid grid-cols-2 gap-2">
+                     <div class="relative">
+                        <img src="./images/past-work-one.jpg" alt="Past Work 1" class="w-full h-24 object-cover rounded-b-lg" />
+                        <div class="bg-[#0B5D1E] absolute bottom-0 right-0 p-2 hover:bg-[#203925] transition duration-300 ease">
+                           <a href="#" class="text-white text-sm">View Details</a>
+                        </div>
+                     </div>
+                     <div class="relative">
+                        <img src="./images/past-work-two.jpg" alt="Past Work 2" class="w-full h-24 object-cover rounded-b-2xl" />
+                        <div class="bg-[#0B5D1E] absolute bottom-0 right-0 p-2 hover:bg-[#203925] transition duration-300 ease">
+                           <a href="#" class="text-white text-sm">View Details</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div><button>Get Free Quote</button></div>
-         </nav>
-      </header>
-      <!-- Hero section -->
-      <section class="relative">
-         <div
-            class="w-full h-[90vh] bg-center bg-repeat bg-[#143624]"
-            style="background-image: url('./images/bg-puzzle.png')"
-            ></div>
-      </section>
+         </section>
+      </div>
       <!-- Reviews section -->
       <section class="py-12">
       <div class="container mx-auto px-4">
@@ -267,73 +359,169 @@
             </div>
          </div>
       </section>
-
-<section class="py-12 px-4  mx-auto">
-  <!-- Services Section -->
-  <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Our HVAC Services</h2>
-  <div class="section-container grid grid-cols-1 gap-6 lg:grid-cols-3">
-    <!-- Service 1 -->
-    <div class=" rounded-lg overflow-hidden shadow">
-      <img src="./images/service-cart-1.jpg" alt="Air Conditioner Installation" class="w-full h-48 rounded-lg object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold text-lg mb-1">Air Conditioner Installation</h3>
-        <p class="text-sm text-gray-600 mb-4">Stay cool all summer with fast, professional AC installations built to last.</p>
-        <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
-      </div>
-    </div>
-
-    <!-- Service 2 -->
-    <div class=" rounded-lg overflow-hidden shadow">
-      <img src="./images/service-cart-2.jpg" alt="Heating System Repair" class="w-full h-48 object-cover rounded-lg">
-      <div class="p-4">
-        <h3 class="font-semibold text-lg mb-1">Heating System Repair</h3>
-        <p class="text-sm text-gray-600 mb-4">Keep your home warm and safe with expert repair services for any heating system.</p>
-        <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
-      </div>
-    </div>
-
-    <!-- Service 3 -->
-    <div class="bg-white rounded-lg overflow-hidden shadow">
-      <img src="./images/service-cart-3.jpg" alt="Indoor Air Quality Solutions" class="w-full h-48 object-cover rounded-lg">
-      <div class="p-4">
-        <h3 class="font-semibold text-lg mb-1">Indoor Air Quality Solutions</h3>
-        <p class="text-sm text-gray-600 mb-4">Breathe cleaner, healthier air with advanced filtration and ventilation systems.</p>
-        <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Team Section -->
-  <div class="section-container mt-16 ">
-    <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Meet the People Behind the Work</h2>
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Image -->
-      <div class="col-span-1 md:col-span-1 lg:col-span-1">
-        <img src="./images/meet-people.jpg" alt="HVAC Team" class="w-full h-full object-cover rounded-lg">
-      </div>
-
-      <!-- Quote 1 -->
-      <div class="border rounded-lg p-6 bg-white shadow">
-        <p class="italic text-sm mb-4">“My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every day.”</p>
-        <p class="font-semibold text-green-800">James Carter</p>
-        <p class="text-sm text-gray-600">Founder & Senior HVAC Specialist</p>
-      </div>
-
-      <!-- Quote 2 -->
-      <div class="border rounded-lg p-6 bg-white shadow">
-        <p class="italic text-sm mb-4">“I’m here to ensure every project runs smoothly and every customer feels heard, respected, and happy with our work.”</p>
-        <p class="font-semibold text-green-800">Michael Torres</p>
-        <p class="text-sm text-gray-600">Operations Manager & Customer Care Lead</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Insight -->
- 
-
-
+      <section class="py-12 px-4  mx-auto">
+         <!-- Top Promo Section -->
+         <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Save Big on Your Next HVAC Project</h2>
+         <div class="section-container grid grid-cols-1 gap-6 md:grid-cols-3">
+            <!-- Promo Card -->
+            <div class="relative rounded-xl overflow-hidden col-span-2">
+               <img src="./images/project-1.jpg" alt="Promo HVAC" class="w-full h-64 object-cover brightness-75">
+               <div class="absolute inset-0 flex flex-col justify-center px-6 text-white">
+                  <span class="bg-white text-green-800 px-3 py-1 rounded-full text-sm w-fit mb-2 font-semibold">Hot Offer</span>
+                  <h3 class="text-xl font-semibold">Get $500 OFF New HVAC System Installation!</h3>
+                  <p class="text-sm mt-2">Upgrade your comfort and save big! Get an instant $500 OFF when you install a brand-new, energy-efficient HVAC system — limited time only!</p>
+               </div>
+            </div>
+            <!-- Image Only -->
+            <div class="rounded-xl overflow-hidden">
+               <img src="./images/project-2.jpg" alt="Technician" class="w-full h-64 object-cover">
+            </div>
+         </div>
+         <!-- Services Summary Section -->
+         <h2 class="text-2xl md:text-3xl font-semibold text-center mt-16 mb-10">How We Bring Comfort to Your Home</h2>
+         <div class="section-container grid  gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Card 1 -->
+            <div class="bg-green-50 rounded-xl p-6 text-center shadow">
+               <img src="./images/comfort-1.jpg" alt="Schedule" class="w-full h-48 rounded-lg mb-4">
+               <div class="flex justify-center mb-2">
+                  <div class="bg-green-800 text-white p-2 rounded-full">
+                     📅
+                  </div>
+               </div>
+               <h3 class="font-semibold text-lg mb-1">Schedule a Consultation</h3>
+               <p class="text-sm text-gray-600">Contact us to book your free consultation with our HVAC experts.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-green-50 rounded-xl p-6 text-center shadow">
+               <img src="./images/comfort-2.jpg" alt="Quote" class="w-full h-48  rounded-lg mb-4">
+               <div class="flex justify-center mb-2">
+                  <div class="bg-green-800 text-white p-2 rounded-full">
+                     📄
+                  </div>
+               </div>
+               <h3 class="font-semibold text-lg mb-1">Get a Custom Quote</h3>
+               <p class="text-sm text-gray-600">We assess your needs and provide a clear, no-obligation quote.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-green-50 rounded-xl p-6 text-center shadow">
+               <img src="./images/comfort-3.jpg" alt="Installation" class="w-full h-48  rounded-lg mb-4">
+               <div class="flex justify-center mb-2">
+                  <div class="bg-green-800 text-white p-2 rounded-full">
+                     🛠️
+                  </div>
+               </div>
+               <h3 class="font-semibold text-lg mb-1">Professional Installation</h3>
+               <p class="text-sm text-gray-600">Our certified team installs your system with precision and care.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-green-50 rounded-xl p-6 text-center shadow">
+               <img src="./images/comfort-4.jpg" alt="Comfort" class="w-full h-48  rounded-lg mb-4">
+               <div class="flex justify-center mb-2">
+                  <div class="bg-green-800 text-white p-2 rounded-full">
+                     🏡
+                  </div>
+               </div>
+               <h3 class="font-semibold text-lg mb-1">Enjoy Total Comfort</h3>
+               <p class="text-sm text-gray-600">Experience efficient heating and cooling all year round.</p>
+            </div>
+         </div>
+      </section>
+      <!-- HVAC services -->
+      <section class="py-12 px-4  mx-auto">
+         <!-- Services Section -->
+         <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Our HVAC Services</h2>
+         <div class="section-container grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <!-- Service 1 -->
+            <div class=" rounded-lg overflow-hidden shadow">
+               <img src="./images/service-cart-1.jpg" alt="Air Conditioner Installation" class="w-full h-48 rounded-lg object-cover">
+               <div class="p-4">
+                  <h3 class="font-semibold text-lg mb-1">Air Conditioner Installation</h3>
+                  <p class="text-sm text-gray-600 mb-4">Stay cool all summer with fast, professional AC installations built to last.</p>
+                  <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
+               </div>
+            </div>
+            <!-- Service 2 -->
+            <div class=" rounded-lg overflow-hidden shadow">
+               <img src="./images/service-cart-2.jpg" alt="Heating System Repair" class="w-full h-48 object-cover rounded-lg">
+               <div class="p-4">
+                  <h3 class="font-semibold text-lg mb-1">Heating System Repair</h3>
+                  <p class="text-sm text-gray-600 mb-4">Keep your home warm and safe with expert repair services for any heating system.</p>
+                  <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
+               </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+               <img src="./images/service-cart-3.jpg" alt="Indoor Air Quality Solutions" class="w-full h-48 object-cover rounded-lg">
+               <div class="p-4">
+                  <h3 class="font-semibold text-lg mb-1">Indoor Air Quality Solutions</h3>
+                  <p class="text-sm text-gray-600 mb-4">Breathe cleaner, healthier air with advanced filtration and ventilation systems.</p>
+                  <button class="bg-green-800 text-white px-4 py-2 rounded text-sm hover:bg-green-700">Explore Service</button>
+               </div>
+            </div>
+         </div>
+         <!-- Team Section -->
+         <div class="section-container mt-16 ">
+            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Meet the People Behind the Work</h2>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+               <!-- Image -->
+               <div class="col-span-1 md:col-span-1 lg:col-span-1">
+                  <img src="./images/meet-people.jpg" alt="HVAC Team" class="w-full h-full object-cover rounded-lg">
+               </div>
+               <!-- Quote 1 -->
+               <div class="border rounded-lg p-6 bg-white shadow">
+                  <p class="italic text-sm mb-4">“My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every day.”</p>
+                  <p class="font-semibold text-green-800">James Carter</p>
+                  <p class="text-sm text-gray-600">Founder & Senior HVAC Specialist</p>
+               </div>
+               <!-- Quote 2 -->
+               <div class="border rounded-lg p-6 bg-white shadow">
+                  <p class="italic text-sm mb-4">“I’m here to ensure every project runs smoothly and every customer feels heard, respected, and happy with our work.”</p>
+                  <p class="font-semibold text-green-800">Michael Torres</p>
+                  <p class="text-sm text-gray-600">Operations Manager & Customer Care Lead</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Insight -->
+      <section class="py-12 bg-white">
+         <div class="section-container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-12">HVAC Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+               <!-- Article 1 -->
+               <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img src="./images/insight-1.jpg" alt="AC Maintenance" class="w-full h-48 object-cover" />
+                  <div class="p-6">
+                     <p class="text-gray-500 text-sm mb-2">25 Apr 2025</p>
+                     <h3 class="text-lg font-medium mb-4">5 Signs Your AC Needs Maintenance</h3>
+                     <a href="#" class="text-[#0B5D1E] font-medium hover:underline">Read More</a>
+                  </div>
+               </div>
+               <!-- Article 2 -->
+               <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img src="./images/insight-2.jpg" alt="Heating Bills" class="w-full h-48 object-cover" />
+                  <div class="p-6">
+                     <p class="text-gray-500 text-sm mb-2">22 Apr 2025</p>
+                     <h3 class="text-lg font-medium mb-4">How to Save on Heating Bills This Winter</h3>
+                     <a href="#" class="text-[#0B5D1E] font-medium hover:underline">Read More</a>
+                  </div>
+               </div>
+               <!-- Article 3 -->
+               <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img src="./images/insight-3.jpg" alt="Thermostat Settings" class="w-full h-48 object-cover" />
+                  <div class="p-6">
+                     <p class="text-gray-500 text-sm mb-2">22 Apr 2025</p>
+                     <h3 class="text-lg font-medium mb-4">The Best Thermostat Settings for Comfort & Efficiency</h3>
+                     <a href="#" class="text-[#0B5D1E] font-medium hover:underline">Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center">
+               <button class="bg-[#0B5D1E] text-white px-6 py-2 rounded-lg hover:bg-[#084515] transition">
+               Explore All Articles
+               </button>
+            </div>
+         </div>
+      </section>
       <!-- Areas We Serve -->
       <section class="py-12 text-center">
          <h2 class="text-2xl md:text-3xl font-semibold mb-8">Areas We Serve</h2>
@@ -366,12 +554,12 @@
       <!-- Footer -->
       <footer class="bg-[#0B5D1E] text-white pt-12 pb-4 px-4">
          <!-- Search Box -->
-         <div class="max-w-6xl mx-auto bg-white mb-10 px-4">
-            <form class=" p-4 md:p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+         <div class="max-w-6xl rounded-xl mx-auto bg-white mb-10 px-4">
+            <form class=" p-4 md:p-6  shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
                <input 
                   type="text" 
                   placeholder="Let us help you choose the perfect system for your home." 
-                  class="flex-1 w-full md:w-auto px-4 py-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-green-600 text-sm placeholder:text-[#0B5D1E]]"
+                  class="flex-1 w-full md:w-auto px-4 py-2 text-black rounded focus:outline-none focus:ring-2 focus:ring-green-600 text-sm placeholder:text-[#0B5D1E] placeholder:text-lg"
                   />
                <button 
                   type="submit" 
@@ -419,10 +607,12 @@
             </div>
          </div>
          <!-- Footer Bottom -->
-         
-         <div class="text-center  text-xs  pt-4">
-            <p>© 2025 all rights reserved</p>
+        
+         <div>
+            <p class="mx-auto text-center">© 2025 all rights reserved</p>
          </div>
+         
       </footer>
+     
    </body>
 </html>
