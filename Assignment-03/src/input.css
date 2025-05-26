@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .section-container{
-    @apply container py-4 px-20
+    @apply container py-4 px-10 md:px-20
 }
 
 .location-btn{
